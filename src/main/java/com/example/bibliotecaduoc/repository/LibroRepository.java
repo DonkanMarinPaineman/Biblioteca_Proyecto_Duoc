@@ -42,7 +42,7 @@ public class LibroRepository {
         listaLibros.add(lib);
         return lib;
     }
-
+ 
     //actualizar un libro por id
     public Libro actualizar(Libro lib){
         int id = 0;
