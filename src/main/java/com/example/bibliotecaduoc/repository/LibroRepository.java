@@ -66,6 +66,7 @@ public class LibroRepository {
         listaLibros.set(idPosicion, libro1);
         return libro1;
     }
+    
 
     //eliminar un libro
     public void eliminar(int id){
