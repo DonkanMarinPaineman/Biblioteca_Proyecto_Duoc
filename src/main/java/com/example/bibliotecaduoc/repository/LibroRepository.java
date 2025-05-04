@@ -94,7 +94,18 @@ public class LibroRepository {
         return listaLibros.size();
     }
 
-
+    //buscar libro por su autor
+    public Libro buscarPorAutor (String autor){
+        if (autor== null){
+            return null;
+        }
+        for (Libro libro : listaLibros){
+            if (libro.getAutor().equalsIgnoreCase(autor)){
+                return libro;
+            }
+        }
+        return null;
+    }
 
 
 
