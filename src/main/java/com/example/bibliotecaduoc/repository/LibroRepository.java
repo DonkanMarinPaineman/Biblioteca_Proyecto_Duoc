@@ -8,9 +8,23 @@ import java.util.List;
 
 @Repository
 public class LibroRepository {
+    public LibroRepository() {
+    listaLibros.add(new Libro(1, "9780000000001", "Introducción a Java", "Educación Global", 2020, "Laura González"));
+    listaLibros.add(new Libro(2, "9780000000002", "Spring Boot en Acción", "TechPress", 2021, "Miguel Ramírez"));
+    listaLibros.add(new Libro(3, "9780000000003", "Hibernate para Principiantes", "CodeHouse", 2019, "Andrea Soto"));
+    listaLibros.add(new Libro(4, "9780000000004", "Microservicios con Spring Cloud", "CloudTech", 2022, "Javier Morales"));
+    listaLibros.add(new Libro(5, "9780000000005", "REST APIs con Spring Boot", "API Editores", 2023, "Patricia Fernández"));
+    listaLibros.add(new Libro(6, "9780000000006", "Java y Bases de Datos", "BD Books", 2018, "José Herrera"));
+    listaLibros.add(new Libro(7, "9780000000007", "Fundamentos de Programación", "Academia TI", 2017, "Camila Núñez"));
+    listaLibros.add(new Libro(8, "9780000000008", "Testing en Java", "QA Publishing", 2021, "Ricardo Paredes"));
+    listaLibros.add(new Libro(9, "9780000000009", "Arquitectura de Software", "SoftBuild", 2020, "Verónica Díaz"));
+    listaLibros.add(new Libro(10, "9780000000010", "Desarrollo Web Full Stack", "WebMasters", 2023, "Tomás Salinas"));
+    }
 
     //arreglo que guardara todos los libros
     private List<Libro> listaLibros = new ArrayList<>();
+
+    
 
     //metodo que retorna todos los libros
     public List<Libro> obtenerLibros(){
@@ -76,6 +90,9 @@ public class LibroRepository {
         }
     }
 
+    public int totalLibros(){
+        return listaLibros.size();
+    }
 
 
 
