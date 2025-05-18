@@ -128,9 +128,16 @@ public class LibroRepository {
         return masViejo;
     }
 
-
-
     //Buscar el libro más nuevo
+    public Libro obtenerLibroMasNuevo(){
+        Libro masNuevo = listaLibros.get(0);
+        for (Libro libro : listaLibros){
+            if (libro.getFechaPublicacion() > masNuevo.getFechaPublicacion()){
+                masNuevo = libro;
+            }
+        }
+        return masNuevo;
+    }
 
 
 

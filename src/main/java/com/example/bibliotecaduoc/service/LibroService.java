@@ -52,4 +52,8 @@ public class LibroService {
     public Libro getLibroMasViejo(){
         return libroRepository.obtenerLibroMasViejo();
     }
+
+    public Libro getLibroMasNuevo(){
+        return libroRepository.obtenerLibroMasNuevo();
+    }
 }

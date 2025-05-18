@@ -58,5 +58,11 @@ public class LibroController {
     public Libro getLibroMasViejo(){
         return libroService.getLibroMasViejo();
     }
+
+    @GetMapping("/mas-nuevo")
+    public Libro getLibroMasNuevo(){
+        return libroService.getLibroMasNuevo();
+    }
 }
+
 
