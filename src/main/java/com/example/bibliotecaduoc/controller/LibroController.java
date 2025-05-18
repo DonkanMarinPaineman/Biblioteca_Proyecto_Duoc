@@ -48,5 +48,10 @@ public class LibroController {
     public Libro getLibroAutor(@PathVariable String autor){
         return libroService.getLibroAutor(autor);
     }
+
+    @GetMapping("/cantidad/{año}")
+    public int getLibrosPorAño(@PathVariable int año){
+        return libroService.getLibrosPorAño(año);
+    }
 }
 

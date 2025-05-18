@@ -23,9 +23,7 @@ public class LibroRepository {
 
     //arreglo que guardara todos los libros
     private List<Libro> listaLibros = new ArrayList<>();
-
     
-
     //metodo que retorna todos los libros
     public List<Libro> obtenerLibros(){
         return listaLibros;
@@ -107,6 +105,25 @@ public class LibroRepository {
         return null;
     }
 
+    //Buscar por cantidad de libros en un año especifico
+    public int contarLibrosPorAño(int año){
+        int contador = 0;
+        for(Libro libro : listaLibros){
+            if(libro.getFechaPublicacion()==año){
+                contador++;
+            }
+        }
+        return contador;
+    }
 
 
+    //Buscar el libro más antiguo.
+
+
+
+    //Buscar el libro más nuevo
+
+
+
+    //Listar todos los libros ordenados por año de publicación: 
 }

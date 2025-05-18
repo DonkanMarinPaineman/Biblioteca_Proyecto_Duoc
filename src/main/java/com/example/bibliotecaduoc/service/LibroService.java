@@ -44,4 +44,8 @@ public class LibroService {
     public Libro getLibroAutor( String autor){
         return libroRepository.buscarPorAutor(autor);
     }
+
+    public int getLibrosPorAño (int año){
+        return libroRepository.contarLibrosPorAño(año);
+    } 
 }
