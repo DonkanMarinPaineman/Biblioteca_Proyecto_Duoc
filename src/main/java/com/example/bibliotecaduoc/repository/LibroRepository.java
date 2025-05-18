@@ -118,6 +118,15 @@ public class LibroRepository {
 
 
     //Buscar el libro más antiguo.
+    public Libro obtenerLibroMasViejo(){
+        Libro masViejo = listaLibros.get(0);
+        for (Libro libro : listaLibros){
+            if (libro.getFechaPublicacion() < masViejo.getFechaPublicacion()){
+                masViejo = libro;
+            }
+        }
+        return masViejo;
+    }
 
 
 

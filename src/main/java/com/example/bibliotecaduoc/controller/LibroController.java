@@ -53,5 +53,10 @@ public class LibroController {
     public int getLibrosPorAño(@PathVariable int año){
         return libroService.getLibrosPorAño(año);
     }
+
+    @GetMapping("/mas-viejo")
+    public Libro getLibroMasViejo(){
+        return libroService.getLibroMasViejo();
+    }
 }
 

@@ -48,4 +48,8 @@ public class LibroService {
     public int getLibrosPorAño (int año){
         return libroRepository.contarLibrosPorAño(año);
     } 
+
+    public Libro getLibroMasViejo(){
+        return libroRepository.obtenerLibroMasViejo();
+    }
 }
