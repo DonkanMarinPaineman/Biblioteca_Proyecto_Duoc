@@ -63,6 +63,11 @@ public class LibroController {
     public Libro getLibroMasNuevo(){
         return libroService.getLibroMasNuevo();
     }
+
+    @GetMapping("/libros-ordenados")
+    public List<Libro> getLibrosOrdenados(){
+        return libroService.getListaLibrosOrdenados();
+    }
 }
 
 

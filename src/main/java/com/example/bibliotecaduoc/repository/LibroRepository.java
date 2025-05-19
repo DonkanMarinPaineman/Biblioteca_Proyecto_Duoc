@@ -6,6 +6,7 @@ import org.springframework.stereotype.Repository;
 import java.util.ArrayList;
 import java.util.List;
 
+
 @Repository
 public class LibroRepository {
     public LibroRepository() {
@@ -139,7 +140,9 @@ public class LibroRepository {
         return masNuevo;
     }
 
-
-
     //Listar todos los libros ordenados por año de publicación: 
+    public List<Libro> obtenerLibrosOrdenadosPorAño() {
+        listaLibros.sort((l1, l2) -> Integer.compare(l1.getFechaPublicacion(), l2.getFechaPublicacion()));
+        return listaLibros;
+    }
 }
